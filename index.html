@@ -1,0 +1,934 @@
+<html lang="en">
+<head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/jquery.jscrollpane.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+      <script type="text/javascript">
+                var deviceType = "computer";
+        </script>
+        <script type="text/javascript" src="js/jquery.min9965.js"></script>
+        <script type="text/javascript" src="js/no-right-clickcc1a.js"></script>
+      
+        
+</head>
+
+<body>
+        <div id="preloader">
+                <div id="status"></div>
+        </div>
+        <!-- intro -->
+
+        <div id="intro">
+                <video id="int" autoplay muted>
+                        <source src="intro/intro1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+                <button id="skipbutt" onclick="skip()">skip intro <i class="fa fa-home"></i></button>
+        </div>
+        <!-- modal popup -->
+         <div id="mainmodal" class="modal-wraper">
+                <div class="modal-body">
+                        <img src="blackk/_/images/logoblack.gif" width="50%" height="100px" alt="logo">
+                        <h1 id="modal-heading"></h1>
+                        <div id="modal-content">
+                        <iframe id="modal-frame" src="pages/teams.html" frameborder="0"></iframe>
+                        <h1 id="modal-para"> Welcome To Crubano</h1>
+                        </div>
+                        <button id="close"><i class="fas fa-times"></i></button>
+                </div>
+        </div> 
+        
+        <nav id="main-nav" role="navigation">
+                <div id="menu-char2"></div>
+                <div id="menu-shadow2"></div>
+                <div class="menu-header">
+                        <ul id="menu-main-navigation" class="menu">
+                                <li id="menu-item-308"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-308">
+                                        <a href="">Services</a>
+                                </li>
+                                <li id="menu-item-307"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307">
+                                        <a href="">Portfolio</a>
+                                </li>
+                                <li id="menu-item-250"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-250">
+                                        <a href="">packages</a>
+                                </li>
+                                <li><button id="homebutt" onclick="homeclick()">Home <i class="fa fa-home"></i></button></li>
+                                
+                                <li id="menu-item-309"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-309">
+                                        <a href="">Teams</a>
+                                </li>
+                                <li id="menu-item-251"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-251">
+                                        <a href="">About us</a>
+                                </li>
+                                <li id="menu-item-306"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306">
+                                        <a href="">Contact Us</a>
+                                </li>
+                                
+                        </ul>
+                </div>
+        </nav>
+
+        <div id="main-content" class="kinetic-active">
+                <div id="parallax" class="computer">
+                        <div id="para1" class="para" data-speed="0.1" style="top: -304.85px; left: -247px;"></div>
+                        <div id="para15" class="para" data-speed="0.15" style="top: -457.275px; left: -370.5px;"></div>
+                        <div id="para2" class="para" data-speed="0.2" style="top: -609.7px; left: -494px;">
+                                <div class="star" style="left: 295px; top: 1766px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 2306px; top: 1616px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 294px; top: 456px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 108px; top: 1936px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 307px; top: 14px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 883px; top: 226px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 104px; top: 579px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1164px; top: 1441px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1292px; top: 1871px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 2198px; top: 1400px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 981px; top: 475px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1404px; top: 1130px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 431px; top: 1838px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 2483px; top: 40px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 315px; top: 1819px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 2464px; top: 1141px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 881px; top: 1736px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 124px; top: 926px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 687px; top: 679px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1359px; top: 1094px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1253px; top: 379px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 657px; top: 1498px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 1700px; top: 591px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1558px; top: 1086px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 1621px; top: 1113px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 2391px; top: 1746px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1751px; top: 764px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 96px; top: 425px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1757px; top: 1815px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 586px; top: 1101px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 400px; top: 116px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1859px; top: 1902px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 2167px; top: 752px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 1440px; top: 1445px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 1842px; top: 766px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 2263px; top: 936px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1139px; top: 810px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1623px; top: 1192px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 2176px; top: 1528px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1541px; top: 640px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 171px; top: 769px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 300px; top: 1646px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1046px; top: 701px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 2000px; top: 1498px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 2490px; top: 124px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 1948px; top: 1049px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 2371px; top: 783px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 613px; top: 473px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1986px; top: 1867px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 909px; top: 586px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1135px; top: 1849px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 2277px; top: 1043px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 1742px; top: 444px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1160px; top: 1297px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 2448px; top: 195px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1079px; top: 186px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 1414px; top: 1855px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1369px; top: 804px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 426px; top: 1997px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 1953px; top: 1789px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 772px; top: 1191px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 398px; top: 1960px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 2033px; top: 1972px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 385px; top: 525px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1677px; top: 704px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 308px; top: 1886px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 463px; top: 399px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 656px; top: 1637px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 874px; top: 401px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 2493px; top: 323px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 2436px; top: 448px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 2170px; top: 1125px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 1568px; top: 273px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 610px; top: 881px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 2440px; top: 264px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1891px; top: 57px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1496px; top: 1904px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 292px; top: 1305px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1136px; top: 26px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 881px; top: 461px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1442px; top: 718px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1716px; top: 1251px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 596px; top: 1630px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1684px; top: 736px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 2264px; top: 1277px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1958px; top: 468px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 2238px; top: 1508px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1889px; top: 1859px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 19px; top: 1831px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 2444px; top: 1849px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 252px; top: 1788px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 964px; top: 1537px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 285px; top: 1298px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 352px; top: 1905px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1437px; top: 1916px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1091px; top: 757px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 918px; top: 616px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 2018px; top: 1592px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1081px; top: 1599px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 254px; top: 1079px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 1134px; top: 96px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1181px; top: 505px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 834px; top: 119px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1923px; top: 1193px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 378px; top: 1934px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 446px; top: 448px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 2447px; top: 1015px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 2015px; top: 698px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 893px; top: 1948px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 2025px; top: 1156px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 330px; top: 1680px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 389px; top: 494px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 2293px; top: 1206px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 2325px; top: 1421px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 2425px; top: 832px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 1971px; top: 1573px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 777px; top: 1525px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1316px; top: 696px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1730px; top: 1345px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1905px; top: 1348px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1321px; top: 1499px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 2152px; top: 1394px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1773px; top: 301px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 731px; top: 1521px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 1782px; top: 1967px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1493px; top: 781px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 451px; top: 1453px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1658px; top: 1526px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 475px; top: 1920px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1698px; top: 1316px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 627px; top: 1493px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 934px; top: 514px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1211px; top: 1865px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 734px; top: 1434px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1746px; top: 1805px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 2368px; top: 119px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 1674px; top: 47px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1653px; top: 993px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1727px; top: 1611px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 589px; top: 1539px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1145px; top: 1715px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 906px; top: 1811px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 714px; top: 27px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1542px; top: 1256px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 2017px; top: 856px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 908px; top: 1725px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1566px; top: 1377px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 2201px; top: 871px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1161px; top: 260px;"><img
+                                                src="blackk/_/images/stars/small1.png">
+                                </div>
+                                <div class="star" style="left: 1437px; top: 525px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1328px; top: 1260px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 497px; top: 997px;"><img
+                                                src="blackk/_/images/stars/small4.png">
+                                </div>
+                                <div class="star" style="left: 1500px; top: 486px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1958px; top: 1590px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 2299px; top: 1617px;"><img
+                                                src="blackk/_/images/stars/small2.png">
+                                </div>
+                                <div class="star" style="left: 1092px; top: 619px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1298px; top: 1899px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 612px; top: 1393px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                                <div class="star" style="left: 1122px; top: 181px;"><img
+                                                src="blackk/_/images/stars/small3.png">
+                                </div>
+                        </div>
+                        <div id="para3" class="para" data-speed="0.3" style="top: -914.55px; left: -741px;">
+                                <div class="star" style="left: 1627px; top: 702px;"><img
+                                                src="blackk/_/images/stars/med3.png"></div>
+                                <div class="star" style="left: 1763px; top: 1252px;"><img
+                                                src="blackk/_/images/stars/med9.png"></div>
+                                <div class="star" style="left: 2509px; top: 1402px;"><img
+                                                src="blackk/_/images/stars/med4.png"></div>
+                                <div class="star" style="left: 1368px; top: 289px;"><img
+                                                src="blackk/_/images/stars/med8.png"></div>
+                                <div class="star" style="left: 1656px; top: 2008px;"><img
+                                                src="blackk/_/images/stars/med7.png"></div>
+                                <div class="star" style="left: 305px; top: 1262px;"><img
+                                                src="blackk/_/images/stars/med8.png"></div>
+                                <div class="star" style="left: 1399px; top: 1621px;"><img
+                                                src="blackk/_/images/stars/med7.png"></div>
+                                <div class="star" style="left: 2171px; top: 1402px;"><img
+                                                src="blackk/_/images/stars/med10.png"></div>
+                                <div class="star" style="left: 1824px; top: 1948px;"><img
+                                                src="blackk/_/images/stars/med3.png"></div>
+                                <div class="star" style="left: 2483px; top: 453px;"><img
+                                                src="blackk/_/images/stars/med4.png"></div>
+                                <div class="star" style="left: 2017px; top: 654px;"><img
+                                                src="blackk/_/images/stars/med10.png"></div>
+                                <div class="star" style="left: 1180px; top: 1062px;"><img
+                                                src="blackk/_/images/stars/med5.png"></div>
+                                <div class="star" style="left: 2256px; top: 1351px;"><img
+                                                src="blackk/_/images/stars/med10.png"></div>
+                                <div class="star" style="left: 2062px; top: 1440px;"><img
+                                                src="blackk/_/images/stars/med1.png"></div>
+                                <div class="star" style="left: 1755px; top: 47px;"><img
+                                                src="blackk/_/images/stars/med8.png"></div>
+                                <div class="star" style="left: 300px; top: 1096px;"><img
+                                                src="blackk/_/images/stars/med4.png"></div>
+                                <div class="star" style="left: 301px; top: 875px;"><img
+                                                src="blackk/_/images/stars/med1.png"></div>
+                                <div class="star" style="left: 958px; top: 524px;"><img
+                                                src="blackk/_/images/stars/med5.png"></div>
+                                <div class="star" style="left: 1207px; top: 1288px;"><img
+                                                src="blackk/_/images/stars/med2.png"></div>
+                                <div class="star" style="left: 2539px; top: 115px;"><img
+                                                src="blackk/_/images/stars/med8.png"></div>
+                                <div class="star" style="left: 2474px; top: 54px;"><img
+                                                src="blackk/_/images/stars/med8.png"></div>
+                                <div class="star" style="left: 390px; top: 867px;"><img
+                                                src="blackk/_/images/stars/med7.png"></div>
+                                <div class="star" style="left: 1860px; top: 665px;"><img
+                                                src="blackk/_/images/stars/med5.png"></div>
+                                <div class="star" style="left: 1037px; top: 271px;"><img
+                                                src="blackk/_/images/stars/med3.png"></div>
+                                <div class="star" style="left: 124px; top: 2125px;"><img
+                                                src="blackk/_/images/stars/med7.png"></div>
+                                <div class="star" style="left: 787px; top: 2011px;"><img
+                                                src="blackk/_/images/stars/med10.png"></div>
+                                <div class="star" style="left: 2345px; top: 1787px;"><img
+                                                src="blackk/_/images/stars/med4.png"></div>
+                                <div class="star" style="left: 55px; top: 1865px;"><img
+                                                src="blackk/_/images/stars/med4.png"></div>
+                                <div class="star" style="left: 1617px; top: 1761px;"><img
+                                                src="blackk/_/images/stars/med5.png"></div>
+                                <div class="star" style="left: 840px; top: 1808px;"><img
+                                                src="blackk/_/images/stars/med6.png"></div>
+                                <div class="star" style="left: 1941px; top: 2186px;"><img
+                                                src="blackk/_/images/stars/med10.png"></div>
+                                <div class="star" style="left: 2400px; top: 110px;"><img
+                                                src="blackk/_/images/stars/med2.png"></div>
+                                <div class="star" style="left: 399px; top: 1188px;"><img
+                                                src="blackk/_/images/stars/med4.png"></div>
+                                <div class="star" style="left: 570px; top: 653px;"><img
+                                                src="blackk/_/images/stars/med5.png"></div>
+                        </div>
+                        <div id="para4" class="para" data-speed="0.6" >
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large2.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large13.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large11.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large4.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large10.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large7.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large14.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large11.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large7.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large9.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large5.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large1.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large4.png">
+                                </div>
+                                <div class="star"><img
+                                                src="blackk/_/images/stars/large10.png">
+                                </div>
+                                <div class="star"><img
+                                                src="blackk/_/images/stars/large9.png">
+                                </div>
+                                <div class="star" mg
+                                                src="blackk/_/images/stars/large2.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large14.png">
+                                </div>
+                                <div class="star" img
+                                                src="blackk/_/images/stars/large2.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large13.png">
+                                </div>
+                                <div class="star" img
+                                                src="blackk/_/images/stars/large11.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large12.png">
+                                </div>
+                                <div class="star"><img
+                                                src="blackk/_/images/stars/large10.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large11.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large4.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large10.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large2.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/large6.png">
+                                </div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one1.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one2.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one3.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one4.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one5.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one6.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one7.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one8.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one9.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one10.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one11.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one12.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one13.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one14.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one15.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one16.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one17.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one18.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one19.png"></div>
+                                <div class="star" ><img
+                                                src="blackk/_/images/stars/one20.png"></div>
+                        </div>
+                        <div id="flyby"></div>
+                        <div id="para5">
+                                <div id="guitar_p" onclick="servicecont()" class="planet menu-planet">
+                                        <div id="guitar_s" class="sprite"></div>
+                                        <div id="guitar_s2" class="sprite"></div>
+                                        <div id="guitar_p2" class="planet"></div>
+                                        <b>Services</b>
+                                </div>
+                                <div id="tango" onclick="portfoliocont()" class="container menu-planet">
+                                        <div id="tango_layer1" class="planet para" data-speed="0.2">
+                                        </div>
+                                        <div id="tango_layer2" class="planet para" data-speed="0.3">
+                                        </div>
+                                        <div id="tango_p"  class="planet para" data-speed="0.4">
+                                                <b>Portfolio</b>
+                                        </div>
+                                        <div id="tango_layer3" class="planet para" data-speed="0.5">
+                                        </div>
+                                </div>
+                                <div id="tv" onclick="packagecont()" class="container menu-planet">
+                                        <div id="tv_l1" class="planet para" data-speed="0.2"></div>
+                                        <div id="tv_p" class="planet para" data-speed="0.4">
+                                                <div id="tv_s" class="sprite"></div>
+                                                <b>Packages</b>
+                                        </div>
+                                        <div id="tv_l2" class="planet para" data-speed="0.6"></div>
+                                </div>
+                                <div id="love_p" onclick="teamcont()" class="planet menu-planet">
+                                        <div id="love_s" class="sprite"></div>
+                                        <b>Our Team</b>
+                                </div>
+                                <div id="scarf_p" onclick="aboutcont()" class="planet menu-planet">
+                                        <div id="scarf_s" class="sprite"></div>
+                                        <b>About Us</b>
+                                </div>
+                                <div id="hex_p" onclick="contactcont()" class="planet menu-planet">
+                                        <div id="hex_s" class="sprite"></div>
+                                        <b>Contact Us</b>
+                                </div>
+                                <div id="golf_p" class="planet">
+                                        <div id="golf_s" class="sprite"></div>
+                                </div>
+                                <div id="hanging_woman" class="planet"></div>
+                                <div id="pool" class="container">
+                                        <div id="pool_l3" class="planet para" data-speed="0.2"></div>
+                                        <div id="pool_l2" class="planet para" data-speed="0.4"></div>
+                                        <div id="pool_p" class="planet para" data-speed="0.6"></div>
+                                        <div id="pool_l1" class="planet para" data-speed="0.8"></div>
+                                </div>
+
+                                <div id="king" class="planet"></div>
+
+                                <div id="boat" class="planet"></div>
+
+                                <div id="minigolf" class="planet"></div>
+
+                                <div id="spaceship" class="planet"></div>
+
+
+                                <div id="circus" class="container">
+                                        <div id="circus_l4" class="planet para" data-speed="0.1"
+                                                ></div>
+                                        <div id="circus_l3" class="planet para" data-speed="0.2"
+                                                ></div>
+                                        <div id="circus_l2" class="planet para" data-speed="0.3"
+                                                >
+                                                <div id="circus_sp1" class="sprite"
+                                                        style="background-position: -16px 0%;"></div>
+                                                <div id="circus_sp2" class="sprite"
+                                                        style="background-position: -16px 0%;"></div>
+                                        </div>
+                                        <div id="circus_l1" class="planet para" data-speed="0.5"
+                                                ></div>
+                                </div>
+
+                                <div id="football" class="container">
+                                        <div id="football_p2" class="planet para" data-speed="0.3"
+                                                >
+                                        </div>
+                                        <div id="football_p" class="planet para" data-speed="0.6"
+                                                >
+                                        </div>
+                                </div>
+
+                                <div id="apples" class="planet container">
+                                        <div id="apple_p5" class="planet para" data-speed="0.1"
+                                                ></div>
+                                        <div id="apple_p4" class="planet para" data-speed="0.2"
+                                                ></div>
+                                        <div id="apple_p3" class="planet para" data-speed="0.4"
+                                                ></div>
+                                        <div id="apple" class="planet para" data-speed="0.6"
+                                                ></div>
+                                        <div id="apple_p2" class="planet para" data-speed="0.9"
+                                                >
+                                        </div>
+                                        <div id="apple_p1" class="planet para" data-speed="1.4"
+                                                >
+                                        </div>
+                                </div>
+
+                                <!-- <div id="screen">
+                                        <div id="page-header"></div>
+                                        <div id="close_butt"></div>
+                                        <div id="page-content"></div>
+                                        <div id="loading"></div>
+                                </div> -->
+
+                                <div id="logo" class="planet" data-speed="0.1"></div>
+
+                                <div id="cloud_med1" class="cloud_med star para" data-speed="0.8"
+                                        >
+                                </div>
+                                <div id="cloud_large2" class="cloud_large star para" data-speed="0.7"
+                                        ></div>
+                                <div id="cloud_large3" class="cloud_large star para" data-speed="0.9"
+                                        ></div>
+
+                        </div><!-- end #para5 -->
+
+                        <div id="instructions">
+                                <p>Drag around to explore the universe<br>
+                                        <small>or use the menu below</small>
+                                </p>
+                        </div>
+
+                </div><!-- end #parallax -->
+                <audio>
+                        <source src="sounds/loading.mp3">
+
+                </audio>
+                <audio>
+                        <source src="sounds/bg.mp3">
+
+                </audio>
+                <audio id="close_butt_sound">
+                        <source src="sounds/close_butt.mp3">
+
+                </audio>
+                <audio id="open_sound">
+                        <source src="sounds/open.mp3">
+
+                </audio>
+                <audio id="close_sound">
+                        <source src="sounds/close.mp3">
+
+                </audio>
+                <audio id="tango_sound">
+                        <source src="sounds/tango.mp3">
+
+                </audio>
+                <audio id="tv_sound">
+                        <source src="sounds/tv.mp3">
+
+                </audio>
+                <audio id="knit_sound">
+                        <source src="sounds/knit.mp3">
+
+                </audio>
+                <audio id="fire_sound">
+                        <source src="sounds/fire.mp3">
+
+                </audio>
+                <audio id="guitar_sound">
+                        <source src="sounds/guitar.mp3">
+
+                </audio>
+
+        </div>
+        <!-- end #main-content -->
+        <script type="text/javascript" src="js/vendor.js"></script>
+        <script type="text/javascript">
+                var templateDir = "blackk";
+        </script>
+        <script type="text/javascript" src="js/functions.min.js"></script>
+</body>
+
+</html>

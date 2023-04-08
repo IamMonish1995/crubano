@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Crubano-Services</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<style>
+
+    @media only screen and (max-width: 600px){
+    .container{
+    flex-direction: column;
+    }
+    .container .price-table{
+        margin: 20px auto;
+
+    }
+}
+    ::-webkit-scrollbar {display:none;}
+    body{
+    padding: 0;
+    margin: 0;
+    background: #ffffff00;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.container .price-table{
+    width: 300px;
+    margin: 20px auto;
+    color: rgb(0, 0, 0);
+    border:1px solid #000;
+    transition: all .5s ease-in-out;
+}
+.container .price-table p{
+    padding: 20px;
+    text-align: center;
+}
+.container .price-table p::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: url(images/services/laptop-code-solid.svg);
+    fill: black;
+    
+}
+.container .price-table .price{
+    background: #0d0d0d;
+    height: 100px;
+    padding: 25px 20px;
+    text-align: center;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+.container .price-table:hover{
+    box-shadow: 5px 5px rgb(134, 235, 134),
+      10px 10px rgba(134, 235, 134, 0.8), 15px 15px rgba(214, 221, 244, 0.2),
+      20px 20px rgba(134, 235, 134, 0.59), 25px 25px rgba(214, 221, 244, 0.05);
+     position: relative;
+      top: -10px;
+      left: -10px;
+    }
+
+
+.container .price-table .price span{
+    display: block;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #b5b5b5;
+}
+
+.container .price-table .price span:last-of-type{
+    text-transform: none;
+    font-size: 30px;
+}
+
+.container .price-table .price span .sp-price{
+    display: inline;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+
+.container .price-table ul{
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+
+.container .price-table ul li{
+    width: 180px;
+    margin: auto;
+    border-bottom: 1px solid #484239;
+    padding: 15px 20px 15px 30px;
+    color: #000000;
+    font-size: 18px;
+}
+
+.container .price-table ul li i{
+    margin-right: 10px;
+    color: #070000;
+}
+
+.container .price-table button{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    background: transparent;
+    border:1px solid #000;
+    font-size: 17px;
+}
+
+.container .price-table button:hover{
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.container .price-table .price.first:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background: #857832;
+}
+
+.container .price-table .price.second:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background: #857832;
+}
+
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div style="border: 1px solid black;">
+<div class="container">
+            <div class="price-table">
+                <div class="price first">
+                    <span>Website Design & Development</span>                    
+                </div>
+                <p>We design an exclusive website tailored to your business.</p>
+                    
+                <button>Know More</button>
+            </div>
+            <div class="price-table">
+                <div class="price first">
+                    <span>Graphics Design</span>
+                </div>
+                <p>There or three responses to a piece of design - yes, no and Wow!<br>Wow is what we aim.</p>
+                <button>Know More</button>
+            </div>
+        </div>
+<div class="container">
+    <div class="price-table">
+        <div class="price first">
+            <span>Social Media Marketing</span>
+        </div>
+        <p>We create appealing social media posts to reach more audience.</p>
+            
+        <button>Know More</button>
+    </div>
+    <div class="price-table">
+        <div class="price first">
+            <span>SEO</span>
+        </div>
+        <p>We help you rank on Google for profitable keywords through SEO.</p>
+        <button>Know More</button>
+    </div>
+</div>
+        </div>
+    </div>
+<!-- partial -->
+
+
+<div style="height: 100px;width: 100%"></div>
+</body>
+</html>

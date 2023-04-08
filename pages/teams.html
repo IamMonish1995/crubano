@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Crubano Team</title>
+  <style>
+::-webkit-scrollbar {display:none;}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html, body {
+  min-height: 100%;
+}
+a{
+  color: #000;
+}
+li {
+  list-style: none;
+}
+/* style member component */
+.list-members {
+  background: #ffe60100;
+  width: 99%;
+  margin:auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+.member {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.member-image {
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.member-image img {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+.member-image:hover img {
+  transform: scale(1.1);
+}
+.member-info {
+  width: 50%;
+  text-align: center;
+}
+.member-info p {
+  margin: 20px 0;
+}
+/* style social link */
+.social-link .fab {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #000;
+  margin: 0 7px;
+  cursor: pointer;
+  transition: transform .5s;
+}
+
+.social-link .fab:hover {
+  background: #000;
+  color: #ffffff;
+  transform: translateY(-7px);
+}
+
+/* Membuat segitiga */
+.member-image::after {
+  content: '';
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 15px solid #ffe60100;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+
+/* Merubah posisi member-image dengan member-info */
+@media screen and (min-width: 771px) {
+  .member:nth-child(4n+3) .member-info,
+  .member:nth-child(4n+4) .member-info {
+    order: 1;
+  }
+  .member:nth-child(4n+3) .member-image,
+  .member:nth-child(4n+4) .member-image {
+    order: 2;
+  }
+
+  /* Merubah posisi sigitiga pada baris genap */
+  .member:nth-child(4n+3) .member-image::after,
+  .member:nth-child(4n+4) .member-image::after {
+    left: 0;
+    right: auto;
+    transform: translateY(-50%) rotateZ(180deg);
+  }
+}
+
+
+/* Mobile Styles */
+@media screen and (max-width: 770px) {
+  .list-members {
+    width: 95%;
+  }
+  .member {
+    flex-basis: 100%;
+    font-size: 14px;
+  }
+  .social-link .fab {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .member:nth-child(even) .member-info {
+    order: 1;
+  }
+  .member:nth-child(even) .member-image {
+    order: 2;
+  }
+  
+  /* Merubah posisi sigitiga elemen genap */
+  .member:nth-child(even) .member-image::after {
+    left: 0;
+    right: auto;
+    transform: translateY(-50%) rotateZ(180deg);
+  }
+}
+  </style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<ul class="list-members">
+  <li class="member">
+    <div class="member-image">
+      <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/4.png">
+    </div>
+    <div class="member-info">
+      <h3>Padmapani Manke</h3>
+      <p>Founder & CEO</p>
+      <div class="social-link">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </li>
+  <li class="member">
+    <div class="member-image">
+      <img src="images/team/sneha.jpeg">
+    </div>
+    <div class="member-info">
+      <h3>Sneha Bhusi</h3>
+      <p>Co-Ordinator</p>
+      <div class="social-link">
+        <a href="https://www.facebook.com/profile.php?id=100008729027508&sk=photos" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/snehabhandari_" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/sneha-bhusi-476309150/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </li>
+  <li class="member">
+    <div class="member-image">
+      <img src="images/team/monish.jpeg">
+    </div>
+    <div class="member-info">
+      <h3>Monish Barse</h3>
+      <p>Web Developer</p>
+      <div class="social-link">
+        <a href="https://www.facebook.com/monish.barse" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/i_am_monish_mb/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/monish-barse-10a51a9b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </li>
+  <li class="member">
+    <div class="member-image">
+      <img src="images/team/pooja.png">
+    </div>
+    <div class="member-info">
+      <h3>Pooja Bhadoriya</h3>
+      <p>Web Developer</p>
+      <div class="social-link">
+        <a href="https://www.facebook.com/pooja.bhadoriya.923" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/itzz_puu/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/pooja-bhadoriya-566791115/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </li>
+  <li class="member">
+    <div class="member-image">
+      <img src="images/team/dipesh.png">
+    </div>
+    <div class="member-info">
+      <h3>Dipesh Burde</h3>
+      <p>Graphics Designer</p>
+      <div class="social-link">
+        <a href="https://www.facebook.com/dipesh.burde.90" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/dipesh._09/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dipesh-burde-2a8310221/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </li>
+  <li class="member">
+    <div class="member-image">
+      <img src="images/team/sachin2.png">
+    </div>
+    <div class="member-info">
+      <h3>Sachin Gurwe</h3>
+      <p>Vedio Editor</p>
+      <div class="social-link">
+        <a href="https://www.facebook.com/ly.gurwe" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sachingurwe/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </li>
+  
+</ul>
+<!-- partial -->
+<div style="height: 100px;width: 100%"></div>
+<script src='https://kit.fontawesome.com/e8bbb49528.js'></script>
+</body>
+</html>

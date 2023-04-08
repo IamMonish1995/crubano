@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crubano-About Us</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <style>
+        ::-webkit-scrollbar {display:none;}
+        body {
+            font-size: 16px;
+        }
+        .aboutus-title {
+            font-size: 30px;
+            letter-spacing: 0;
+            line-height: 32px;
+            margin: 0 0 11px;
+            padding: 0 0 11px;
+            position: relative;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        .aboutus-title::after {
+            background: #fdb801 none repeat scroll 0 0;
+            bottom: 0;
+            content: "";
+            height: 2px;
+            left: 45%;
+            position: absolute;
+            width: 54px;
+        }
+
+        .aboutus-text {
+            color: #606060;
+            font-size: 13px;
+            line-height: 22px;
+            margin: 0 0 11px;
+        }
+
+        a:hover,
+        a:active {
+            color: #000000;
+            text-decoration: none;
+            outline: 0;
+            padding: 10px 20px;
+
+        }
+
+        .aboutus-more {
+            border: 1px solid #000000;
+            color: #000000;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0;
+            padding: 10px 15px;
+            text-transform: uppercase;
+            transition: 1000ms;
+        }
+
+        .aboutus-banner {
+            width: 50%;
+            padding-top: 20px;
+            display: inline-block;
+            text-align: center;
+            
+        }
+        img{
+            vertical-align: bottom;
+        }
+        .aboutus{
+            display: inline-block;
+            width: 45%;
+            text-align: center;
+        }
+        @media only screen and (max-width: 600px){
+            .aboutus{
+            width: 100%;
+            display:block;
+        }
+        @media only screen and (max-width: 600px){
+            .aboutus-banner {
+            width: 100%;
+            padding-top: 20px;
+            display:block;
+            text-align: center;   
+        }
+        }
+}
+    </style>
+
+</head>
+
+<body>
+    <div style="border: 1px solid black;padding-bottom: 20px;" class="aboutus-section">
+        <div class="container">
+            <div class="aboutus">
+                <h2 class="aboutus-title">About Us</h2>
+                <p class="aboutus-text">Crubano is specializing web development company primarily based in Nagpur. We pay close attention to our customers and their satisfaction. Our first priority is always our customers and be it an online presence, a new website or on social media sites, we stand to impress others with quality content that only has a lot of presence on social media.</p>
+                <a class="aboutus-more" href="">read more</a>
+            </div>
+            <div class="aboutus-banner">
+                <img width="400px" height="270px" src="images/contactus/office.png" alt="Crubano">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="height: 100px;width: 100%"></div>
+</body>
+</html>
